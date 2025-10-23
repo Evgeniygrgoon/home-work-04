@@ -365,6 +365,9 @@ margin-bottom: 94px;
 
 
 
+
+
+
 .worker-name {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -379,21 +382,49 @@ margin-bottom: 94px;
   padding-top: 12px;
   padding-bottom: 24px;
 }
+
+
 .worker-contacts-link {
   display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0%;
+  padding-bottom: 32px;
+  
 
 }
 
-.worker-contacts-link svg {
+.social-svg {
   height: 44px;
   width: 44px;
 }
 
 
 
-.social-svg {
-  fill:white;
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill:rgba(175, 177, 184, 1);
 }
+
+.social-link:hover, .social-link:focus {
+background-color: var(--brand-color);
+}
+
+.social-link:hover .social-svg,
+.social-link:focus .social-svg {
+fill: #f5f4fa;
+}
+
+
+
+
+
+
+
+
 
 
 
