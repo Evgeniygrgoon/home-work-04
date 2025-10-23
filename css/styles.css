@@ -1,0 +1,533 @@
+/* сброс стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* root  */
+:root {
+  --brand-color: #2196f3;
+  --brand-black: #212121;
+  --brand-grey: #757575;
+  --main-font-weight: 700;
+  --dark-background: #2f303a;
+}
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* задаем шрифт , цвет и размер всему тексту */
+.all-body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  color: var(--brand-black);
+}
+
+.all-body ul {
+  list-style-type: none;
+}
+
+/* убираем декорацию при посещении */
+.all-body a:visited {
+  text-decoration: none;
+  color: none;
+}
+
+/* убираем декорацию для всех ссылок */
+.all-body a {
+  text-decoration: none;
+}
+
+/* Задаём размер заголовка "чем мы занимаемся" */
+.all-body h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* задаем размер заголовков "наши приемущества"  */
+.all-body h3 {
+  font-size: 14px;
+}
+
+/* Логотип  */
+/* задает логотипу шрифт и размер */
+.main-logo {
+    width: 160px;
+  padding-left: 15px;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  color: var(--brand-color);
+}
+
+
+.main-logo-f {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  color: var(--brand-color);
+}
+/* Цвет "WEB" */
+.logo {
+  color: #2196f3;
+}
+/* цвет "STUDIO" вверху */
+.studio-up {
+  color: var(--brand-black);
+}
+
+/* цвет "STUDIO" внизу */
+.studio-down {
+  color: white;
+}
+
+/* Стили header */
+
+/* задаёт стиль текста в навигации */
+.header {
+   display: flex;
+  height: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-black);
+}
+
+.header-navigation {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-contacts-box {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 305px;
+}
+
+.tel-link{
+  display:flex;
+  align-items: center;
+}
+
+.smartphone {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+}
+.smartphone:hover {
+  stroke: var(--brand-color);
+
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.envelope {
+ width: 16px;
+ height: 12px;
+ margin-left: 30px;
+ margin-right: 10px;
+}
+
+.envelope:hover {
+  stroke: var(--brand-color);
+}
+
+
+.advantage-box svg {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/* Стиль ссылок  в навигации ПЕРЕНЕСТИ */
+.navigation-link a {
+  color: var(--brand-black);
+  text-decoration: none;
+}
+.navigation-link {
+  display: flex;
+ width: 294px;
+ justify-content: space-between;
+ padding: 0px;
+}
+
+.navigation-link a:hover {
+  color: var(--brand-color);
+}
+.navigation-link a:focus {
+  color: var(--brand-color);
+}
+
+/* стиль контактов в навигации */
+
+.nav-contacts-box {
+  display:flex;
+ 
+}
+
+.navigation-contacts {
+  display: flex;
+  padding: 0%;
+ 
+}
+
+.navigation-contacts a {
+  color: var(--brand-grey);
+  text-decoration: none;
+}
+.navigation-contacts a:hover {
+  color: var(--brand-color);
+}
+.navigation-contacts a:focus {
+  color: var(--brand-color);
+}
+
+
+
+
+
+/* блок героя */
+.hero-block {
+  background-image: url(/images/Img\ Overlay.png) , url(/images/Img-backgrownd1.jpg);
+  background-color: var(--dark-background);
+  height: 600px;
+  width: 1600px;
+  margin: 0% auto;
+  background-position: center;
+ 
+}
+
+/*  стиль кнопки "заказать услугу" */
+.order-button {
+  background-color: var(--brand-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-left: 500px;
+  margin-top: 30px;
+  border: 0;
+}
+
+/* Титульный текст */
+.page-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 200px;
+  color: white;
+}
+
+.advantage-tittle {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.advantage-box li {
+  width: 270px;
+
+}
+
+.our-advantage-text  {
+  margin-top: 94px;
+}
+
+.text-advantage p {
+  font-weight: 400 ;
+
+}
+
+.advantage-box {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0%;
+
+}
+
+
+/* стиль основного и секиции "чем мы занимаемся"  текста  */
+.our-advantage-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  line-height: 1.7 ;
+}
+
+.what-we-do-title {
+margin-top: 94px;
+margin-bottom: 94px;
+}
+
+.what-we-do-img {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+
+
+/* Фон секции "наша команда" */
+.our-team {
+  background-color: #f5f4fa;
+}
+
+/* размер текста "наша команда" */
+.our-team-title {
+  font-size: 36px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+
+
+/* Задаёт стиль именам людей и именам проектов */
+.worker-name  {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* задаёт стиль специализациям работников и специализациям проектов  */
+.worker-specialization,
+.project-specialization {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-grey);
+}
+
+.our-team-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  gap: 30px;
+  
+}
+
+.our-team-list>li {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.worker-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+} 
+
+
+.worker-specialization {
+  margin-bottom: 30px;
+}
+
+.project-specialization {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+.worker-contacts-link {
+  display: flex;
+
+}
+
+.worker-contacts-link svg {
+  height: 44px;
+  width: 44px;
+}
+
+
+
+.social-svg {
+  fill:white;
+}
+
+
+
+
+
+
+/* Стили footer */
+.main-logo-f {
+  padding-left: 15px;
+  padding-top: 60px;
+}
+
+/* задаёт стиль адресу в футере */
+
+.down-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+}
+
+.footer-address {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.footer-list {
+  padding-top: 60px;
+}
+
+/* задаёт стиль контактам в футере */
+
+.down-block {
+  background-color: var(--dark-background);
+  
+}
+
+.footer-contacts {
+  text-decoration: none;
+  color: var(--brand-grey);
+}
+
+.footer-contacts:hover {
+  color: var(--brand-color);
+}
+
+.footer-contacts:focus {
+  color: var(--brand-color);
+}
+
+
+
+.filter-button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--brand-black);
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  border-width: 0px;
+}
+
+.filter-button:hover {
+  color: white;
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+.filter-button:active {
+  color: white;
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+
+
+/* стили партфолио */
+
+.portfolio-img-box {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-img {
+  display: block;
+}
+
+
+
+.filter-button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+
+.filter-button {
+  padding: 6px 22px 6px 22px;
+}
+
+
+.our-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0%;
+  gap: 30px;
+  
+
+}
+
+
+.project-list-text {
+  padding-left: 24px;
+  padding-top: 24px;
+
+  border-left-style:solid ;
+  border-left-color:rgba(238, 238, 238, 1) ;
+  border-left-width: 1px;
+
+  border-right-style:solid ;
+  border-right-color:rgba(238, 238, 238, 1) ;
+  border-right-width: 1px;
+
+  border-bottom-style:solid ;
+  border-bottom-color:rgba(238, 238, 238, 1) ;
+  border-bottom-width: 1.6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  
+  padding-bottom: 24px;
+
+}
+
