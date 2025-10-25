@@ -21,7 +21,7 @@
   </head>
 
   <body class="all-body">
-   <header>
+    <header>
     <section class="conteiner">
       <nav>
         <div class="header">
@@ -47,13 +47,24 @@
 
           </div>
 
-
           <div class="nav-contacts-box">
 
             <ul class="navigation-contacts">
-              <li class="tel-numb"><a href="tel:+3809611111111"> +380 96 111 11 11 </a></li>
+              <li class="tel-numb">
+                <a class="tel-link" href="tel:+3809611111111"> 
+                  <svg class="smartphone" >
+                    <use href="/images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                 <p >+380 96 111 11 11</p>
+                </a>
+              </li>
               <li class="email">
-                <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                <a class="mail" href="mailto:info@devstudio.com">
+                   <svg class="envelope" >
+                    <use href="/images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                   <p>info@devstudio.com</p> 
+                  </a>
               </li>
             </ul>
 
@@ -61,11 +72,10 @@
 
 
         </div>
-        </nav>
+      </nav>
     </section>
 
-      
-    </header>
+  </header>
     <main>
       <section class="portfolio-img-box">
       <div class="conteiner">
@@ -83,7 +93,7 @@
 
 
       <ul class="our-project-list">
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/tehnocr.jpg" alt="ноутбук" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Технокряк</p>
@@ -91,7 +101,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/poster.jpg" alt="два баскетболиста" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Постер New Orlean vs Golden Star</p>
@@ -99,7 +109,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/seafood.jpg" alt="рыба в тексте" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Ресторан seafood</p>
@@ -109,7 +119,7 @@
 
 
         
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/prime.jpg" alt="наушники" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Проект Prime</p>
@@ -117,7 +127,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/boxes.jpg" alt="коробки" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Проект Boxes</p>
@@ -126,7 +136,7 @@
         </li>
       
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/no-borders.jpg" alt="монитор" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Inspereted has no Borders</p>
@@ -134,7 +144,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/limited-edition.jpg" alt="журнал" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Издание Limited Edition</p>
@@ -142,7 +152,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/tag.jpg" alt="бирка" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Проект LAB</p>
@@ -150,7 +160,7 @@
           </div>
         </li>
       
-        <li>
+        <li class="project-card">
           <img class="portfolio-img" src="images/growning-business.jpg" alt="ноутбук с человеком" width="370" height="294" />
           <div class="project-list-text">
           <p class="project-name">Growninr Business</p>
@@ -163,27 +173,61 @@
       </main>
 
       <footer class="down-block">
-        <section class="footer-list">
-          <div class="conteiner">
-            <a class="main-logo-f logo" href="index.html">
-              Web<span class="studio-down">Studio</span>
-            </a>
-    
-            <div class="down-contacts">
-              <address class="footer-address">
-                г. Киев, пр-т Леси Украинки, д. 26
-              </address>
-    
-              <a class="footer-contacts" href="mailto:info@example.com">
-                info@example.com
+  <section class="footer-list">
+    <div class="conteiner">
+      <div class="footer-contacts-block">
+        <div class="down-contacts">
+           <a class="main-logo-f logo" href="index.html">
+        Web<span class="studio-down">Studio</span>
+      </a>
+          <address class="footer-address">
+            г. Киев, пр-т Леси Украинки, д. 26
+          </address>
+          <a class="footer-contacts" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="footer-contacts" href="tel:+380991111111">
+            +38-099 111-11-11
+          </a>
+        </div>
+        <div class="footer-contacts-link">
+          <h3 class="footer-title">Присоединяйтесь</h3>
+          <ul class="worker-contacts-link">
+            <li>
+              <a class="social-link-stydio" href="https://www.instagram.com/" target="_blank">
+                <svg class="social-svg">
+                  <use href="/images/symbol-defs.svg#icon-inst">
+                  </use>
+                </svg>
               </a>
-              <a class="footer-contacts" href="tel:+380991111111">
-                +38-099 111-11-11
+            </li>
+            <li>
+              <a class="social-link-stydio" href="https://x.com/" target="_blank">
+                <svg class="social-svg">
+                  <use href="/images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
               </a>
-            </div>
-          </div>
-        </section>
-      </footer>
+            </li>
+            <li>
+              <a class="social-link-stydio" href="https://www.facebook.com/" target="_blank">
+                <svg class="social-svg">
+                  <use href="/images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link-stydio" href="https://ru.linkedin.com/" target="_blank">
+                <svg class="social-svg">
+                  <use href="/images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
       </body>
     
       </html>
