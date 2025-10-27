@@ -36,6 +36,13 @@ ol[class] {
   --dark-background: #2f303a;
 }
 
+.up-block {
+  border-bottom-width: 1px;
+  border-bottom-color: #757575;
+  border-bottom-style: solid;
+
+}
+
 .conteiner {
   width: 1200px;
   margin: 0 auto;
